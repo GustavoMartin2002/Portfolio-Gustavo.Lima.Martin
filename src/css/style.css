@@ -2,20 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Mooli&family=Roboto:wght@500&display=swap');
 
 /* GERAL */
-html{
-    scroll-behavior: smooth;
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    height: 100vh;
+    height: 100%;
     background-color: black;
     font-family: "Poppins", Arial, sans-serif;
+}
+
+.hr{
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .interface{
@@ -55,14 +60,20 @@ h2.titulo{
     height: 50px;
 }
 
-hr{
-    margin: 10px 0px;
+.center{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center{
+    text-align: center;
 }
 
 /* BARRA DE NAVEGAÇÃO PC */
 header{
     padding: 15px 4%;
-    background-color: #0a0a0a;
+    background-color: #151515;
     font-family: "Roboto";
 }
 
@@ -83,7 +94,6 @@ header .menu-desktop a:hover{
     color: white;
     transition: .2s;
     transform: scale(1.10);
-    
 }
 
 header nav ul{
@@ -108,10 +118,11 @@ header .btn-abrir-menu{
 .btn-abrir-menu i{
     color: white;
     font-size: 25px;
+    cursor: pointer;
 }
 
 .menu-mobile{
-    background-color: black;
+    background-color: #151515;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -145,6 +156,7 @@ header .btn-abrir-menu{
 .menu-mobile .btn-fechar i{
     color: white;
     font-size: 30px;
+    cursor: pointer;
 }
 
 .overlay-menu{
@@ -187,6 +199,12 @@ section .flex{
     border-radius: 50%;
 }
 
+.topo-do-site .download-cv .cv{
+    color: white;
+    margin-inline: 20px;
+    font-size: 25px;
+}
+
 /*SECTION CERTIFICAÇÕES*/
 section.certificados{
     padding: 40px 4%;
@@ -197,27 +215,45 @@ section.certificados a{
 }
 
 section.certificados .flex{
-    gap: 60px;
+    gap: 25px 100px;
+    flex-wrap: wrap;
 }
 
 .certificados .certificado-box{
     color: white;
-    padding: 20px 40px;
+    padding: 10px 40px;
     height: 500px;
-    border-radius: 20px;
+    width: 400px;
+    border:0.5rem  double #DAA520;
+    border-radius: 25px;
     margin-top: 50px;
-    cursor: pointer;
 }
 
 .certificados .certificado-box:hover{
     transition: .2s;
-    transform: scale(1.05);
-    box-shadow: 0 0 10px white;
+    box-shadow: 0 0 10px #DAA520;
 }
 
-.certificados .certificado-box i{
+.certificados .certificado-box .icons-top{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.certificados .icons-top .i-certificado{
     color:#DAA520;
     font-size: 60px;
+}
+
+.certificados .icons-top .i-acesso{
+    color:#ffffff;
+    font-size: 20px;
+    transition: .2s;
+}
+
+.certificados .icons-top a:hover{
+    transform: scale(1.20);
+    transition: .1s;
 }
 
 .certificados .certificado-box h3{
@@ -232,8 +268,8 @@ section.certificados .flex{
 
 /* SECTION SOBRE */
 section.sobre{
-    padding: 60px 4%;
-    background-color: #0a0a0a;
+    padding: 20px 4%;
+    background-image: linear-gradient(to top, #101010 0%, black 100%);
 }
 
 .sobre .txt-sobre{
@@ -246,8 +282,8 @@ section.sobre{
 }
 
 .sobre .txt-sobre p{
-    padding: 0 20%;
-    text-align: center;
+    padding: 5px 20%;
+    text-align: justify;
 }
 
 .sobre .txt-formacao{
@@ -269,11 +305,14 @@ section.sobre{
 .sobre .txt-tecnologias{
     color: white;
     margin-top: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sobre .txt-tecnologias ul{
     list-style: none;
+    text-align: center;
 }
 
 .sobre .btn-social button{
@@ -296,7 +335,7 @@ section.sobre{
 /* SECTION PORTFOLIO */
 section.portfolio{
     padding: 60px 4%;
-    box-shadow: 0 0 25px 25px #ffffff0c;
+    background-image: linear-gradient(to bottom, #101010 0%, black 100%);
 }
 
 section.portfolio .flex{
@@ -304,20 +343,20 @@ section.portfolio .flex{
     margin-top: 20px;
 }
 
+.flex a{
+    text-decoration: none;
+}
+
 .img-port{
     width: 360px;
     max-width: 330px;
     height: 460px;
     background-size: cover;
-    background-position: 0% 100%;
+    background-position: center;
     cursor: pointer;
     border-radius: 40px;
     position: relative;
-}
-
-.img-port:hover{
-    transition: 6s;
-    background-position: 100% 100%;
+    text-decoration: none;
 }
 
 .portfolio .overlay{
@@ -326,7 +365,7 @@ section.portfolio .flex{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.700);
     border-radius: 40px;
     display: flex;
     text-align: center;
@@ -343,8 +382,12 @@ section.portfolio .flex{
     opacity: 1;
 }
 
-/* SECTION FORMULARIO */
+.flex p{
+    color: white;
+    margin-top: 6px;
+}
 
+/* SECTION FORMULARIO */
 section.formulario{
     padding: 60px 4%;
 }
@@ -412,7 +455,7 @@ form .btn-enviar button{
 /* FOOTER */
 footer{
     padding: 10px 4%;
-    background-color: #0a0a0a;
+    background-color: #151515;
 }
 
 footer .flex{
@@ -454,7 +497,6 @@ footer .line-footer p a{
 }
 
 /* PROJETO POKEDEX */
-
 section .projeto{
     padding: 10px 4%;
 }
@@ -465,6 +507,7 @@ section .projeto{
 
 .projeto .img-projeto{
     text-align: center;
+  
 }
 
 .projeto .img-projeto a{
@@ -477,12 +520,10 @@ section .projeto{
     cursor: pointer;
     opacity: 80%;
     margin: 20px 0px;
-    
 }
 
 .projeto .img-projeto a{
     background-size: hidden;
-    
 }
 
 .projeto img:hover{
@@ -493,16 +534,13 @@ section .projeto{
 
 .projeto .detalhes{
     margin-top: 20px;
-}
-
-.projeto .detalhes h3{
     color: white;
 }
+
+
 
 .projeto .detalhes p{
-    color: white;
     text-align: justify;
-    
 }
 
 .projeto .tecnologias-utilizadas{
@@ -517,12 +555,16 @@ section .projeto{
 .tecnologias-utilizadas .tec-icons{
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 25px;
+    gap: 10px;  
+    flex-wrap: wrap;
 }
 
 .tecnologias-utilizadas .tec-icons i{
     font-size: 60px;
-    margin: 0px 10px;
+    margin: 0 25px;
+    text-align: center;
 }
 
 .tecnologias-utilizadas .tec-icons i h4{
@@ -546,153 +588,4 @@ section .projeto{
     font-weight: 500;
     cursor: pointer;
     font-family: 'Poppins' ,Arial, Helvetica, sans-serif;
-}
-
-/* RESPONSIVIDADE */
-
-@media screen and (max-width:1266px) {
-    /* GERAL */
-    .logo img{
-        max-height: 30px;
-    }
-
-    .flex{
-        flex-direction: column;
-    }
-
-    h2.titulo{
-        font-size: 30px;
-    }
-
-    /* BARRA DE NAVEGAÇÃO */
-    .menu-desktop, .button-contato{
-        display: none;
-    }
-    
-
-    /* SECTION TOPO*/
-    section .flex{
-        gap: 50px;
-    }
-
-    .topo-do-site .txt-topo-site h1{
-        font-size: 32px;
-    }
-    
-    .topo-do-site .txt-topo-site h1{
-        text-align: center;
-    }
-    
-    .topo-do-site .txt-topo-site p{
-        text-align: center;
-        margin-top:30px;
-        margin-bottom: 0px;
-        margin-right: 0px;
-    }
-    
-    .topo-do-site .img-topo-site img{
-        width: 300px; 
-        height: 300px; 
-        border-radius: 50%;
-    }
-
-
-    /*SECTION CERTIFIÇÕES*/
-    section.certificados{
-        padding: 40px 8%;
-    }
-
-    section .certificados .flex{
-        gap: 10px;
-    }
-
-    .certificados .certificado-box{
-        height: 600px;
-        padding: 10% 40px;
-    }
-
-
-    /* SECTION SOBRE */
-    .sobre .txt-sobre h2{
-        font-size: 22px;
-    }
-
-    .sobre .txt-sobre p{
-        padding: 0px 2%;
-        text-align:justify;
-    }
-
-
-    /* SECTION PORTFOLIO */
-    section.portfolio{
-        padding: 80px 1%;
-        box-shadow: 0 0 25px 25px #ffffff0c;
-    }
-
-
-    .portfolio .img-port{
-        width: 300px;
-        height: 400px;
-        
-    }
-
-    /* FOOTER */
-    footer .flex{
-        flex-direction:row;
-    }
-
-    footer .line-footer p{
-        font-size: 14px;
-        text-align: center;
-    }
-    
-    footer .btn-social button{
-        width: 35px;
-        height: 35px;
-    }
-
-
-    header .btn-abrir-menu{
-        display:block;
-        overflow:visible;
-    }
-
-    /* PROJETO */
-    .projeto .tecnologias-utilizadas h1{
-        font-size: 20px;
-    }
-
-    .projeto .img-projeto{
-        flex-direction: column;
-        display: flex;
-    }
-
-    .projeto .img-projeto img{
-        max-width: 100%;
-        height: 160px;
-    }
-}
-
-
-
-/* JAVA SCRIPT */
-
-.menu-mobile.abrir-menu{
-    width: 70%;
-}
-
-.menu-mobile.abrir-menu ~ .overlay-menu{
-    display: block;
-}
-
-.success{
-    color: greenyellow;
-}
-
-.error{
-    color:tomato;
-}
-
-.success, .error{
-    text-align: center;
 }

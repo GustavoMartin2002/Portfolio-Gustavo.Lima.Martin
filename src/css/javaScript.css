@@ -1,0 +1,8 @@
+/* JAVA SCRIPT */
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}

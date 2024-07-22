@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/icon-x" href="./src/img/icon.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./src/style.css">
-    <script src="./src/menu-mobile.js" defer></script>
-    <script src="./src/nav.js"></script>
-    <script src="./src/form.js"></script>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/normalize.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <link rel="stylesheet" href="./src/css/javaScript.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Portfólio - Gustavo Lima Martin</title>
 </head>
 <body>
-    
     <header>
         <div class="interface">
             <div class="logo">
@@ -53,6 +52,7 @@
                         <li><a href="#sobre">SOBRE</a></li>
                         <li><a href="#portfolio">PORTFÓLIO</a></li>
                         <li><a href="#contato">CONTATO</a></li>
+                        <li><a href="./src/Curriculum-GustavoLimaMartin(2024).pdf" download>DOWNLOAD CV</a></li>
                     </ul>
                 </nav>
 
@@ -70,12 +70,12 @@
 
                         <h1 class="titulo">Desenvolvedor JÚNIOR</h1>
 
-                        <p>Cursando Análise e Desenvolvimento de Sistemas, estudante de desenvolvimento e programação. Busco me especializar  como desenvolvedor Full Stack para a criação de sites, softwares e apps.</p>
+                        <p>Graduado em Análise e Desenvolvimento de Sistemas.<br>Desenvolvedor Full Stack de softwares, web e mobile.</p>
 
-                        <div class="button-contato">
+                        <div class="center button-contato download-cv">
                             <a href="#contato"><button>Entre em Contato.</button></a>
-                        </div><!-- BUTTON-CONTATO -->
-
+                            <a class="cv" href="./src/Curriculum-GustavoLimaMartin(2024).pdf" download><i class="bi bi-arrow-down-circle-fill"></i></a>
+                        </div><!-- BUTTON-CONTATO / DOWNLOAD-CV -->
                     </div><!-- TXT-TOPO-SITE -->
 
                     <div class="img-topo-site">
@@ -88,48 +88,63 @@
 
         <section class="certificados" id="certificacoes">
             <div class="interface">
-
                 <h2 class="titulo">CERTIFICAÇÕES</h2>
 
                 <div class="flex">
-                    <a href="https://bucket-app-certificado.s3.amazonaws.com/ESTACIO/605/7954395/b626898693e5aa4f9bae93df1374e4b-44ee-42e7-aa31-4710ca704134" target="_blank">
-                        <div class="certificado-box">
-                            <i class="bi bi-award-fill"></i>
-                            <h3>Programação para Internet</h3>
-                            <ul>
-                                <li>INTRODUÇÃO À PROGRAMAÇÃO ESTRUTURADA EM C.</li>
-                                <li>DESENV. WEB EM HTML5, CSS, JAVASCRIPT E PHP.</li>
-                                <li>PARADIGMAS DE LINGUAGENS DE PROGRAMAÇÃO EM PYTHON.</li>
-                            </ul>
-                        </div><!-- ESPECIALIDADES-BOX -->
-                    </a>
+                    <div class="certificado-box">
+                        <div class="icons-top">
+                            <i class="bi bi-award-fill i-certificado"></i>
+                            <a href="https://certificado.estacio.br/b626898693e5aa4f9bae93d" target="_blank"><i class="bi bi-box-arrow-up-right i-acesso"></i></a>
+                        </div>
+                        <h3>Programação para Internet</h3>
+                        <ul>
+                            <li>INTRODUÇÃO À PROGRAMAÇÃO ESTRUTURADA EM C.</li>
+                            <li>DESENV. WEB EM HTML5, CSS, JAVASCRIPT E PHP.</li>
+                            <li>PARADIGMAS DE LINGUAGENS DE PROGRAMAÇÃO EM PYTHON.</li>
+                        </ul>
+                    </div><!-- ESPECIALIDADES-BOX -->
                     
-                    <a href="" target="_blank">
-                        <div class="certificado-box">    
-                            <i class="bi bi-award-fill"></i>
-                            <h3>Programação de Algoritmos Escaláveis</h3>
-                            <ul>
-                                <li>INTRODUÇÃO À PROGRAMAÇÃO ESTRUTURADA EM C.</li>
-                                <li>PARADIGMAS DE LINGUAGENS DE PROGRAMAÇÃO EM PYTHON.</li>
-                                <li>PROGRAMAÇÃO ORIENTADA A OBJETOS EM JAVA.</li>
-                                <li>MODELAGEM DE SISTEMAS EM UML.</li>
-                                <li>ESTRUTURA DE DADOS</li>
-                                <li>MATEMÁTICA E LÓGICA.</li>
-                            </ul>
-                        </div><!-- ESPECIALIDADES-BOX -->
-                    </a>
+                    <div class="certificado-box">
+                        <div class="icons-top">
+                            <i class="bi bi-award-fill i-certificado"></i>
+                            <a href="https://certificado.estacio.br/51143fb03924f15c032824d" target="_blank"><i class="bi bi-box-arrow-up-right i-acesso"></i></a>
+                        </div>
 
-                    <a href="" target="_blank">
-                        <div class="certificado-box">
-                            <i class="bi bi-award-fill"></i>
-                            <h3>Programação Para Dispositivos Móveis</h3>
-                            <ul>
-                                <li>DESENV. WEB EM HTML5, CSS, JAVASCRIPT E PHP.</li>
-                                <li>PROGRAMAÇÃO PARA DISPOSITIVOS MÓVEIS EM ANDROID.</li>
-                            </ul>
-                        </div><!-- ESPECIALIDADES-BOX -->
-                    </a>
+                        <h3>Programação Para Dispositivos Móveis</h3>
+                        <ul>
+                            <li>DESENV. WEB EM HTML5, CSS, JAVASCRIPT E PHP.</li>
+                            <li>PROGRAMAÇÃO PARA DISPOSITIVOS MÓVEIS EM ANDROID.</li>
+                        </ul>
+                    </div><!-- ESPECIALIDADES-BOX -->
 
+                    <div class="certificado-box">    
+                        <div class="icons-top">
+                            <i class="bi bi-award-fill i-certificado"></i>
+                            <a href="https://certificado.estacio.br/71ab77a84e8c873cb245808" target="_blank"><i class="bi bi-box-arrow-up-right i-acesso"></i></a>
+                        </div>
+                            
+                        <h3>Programação de Algoritmos Escaláveis</h3>
+                        <ul>
+                            <li>PARADIGMAS DE LINGUAGENS DE PROGRAMAÇÃO EM PYTHON.</li>
+                            <li>ESTRUTURA DE DADOS.</li>
+                            <li>MATEMÁTICA E LÓGICA.</li>
+                        </ul>
+                    </div><!-- ESPECIALIDADES-BOX -->
+
+                    <div class="certificado-box">    
+                        <div class="icons-top">
+                            <i class="bi bi-award-fill i-certificado"></i>
+                            <a href="https://certificado.estacio.br/b06b38012dfa1486ced2582" target="_blank"><i class="bi bi-box-arrow-up-right i-acesso"></i></a>
+                        </div>
+                            
+                        <h3>Desenvolvimento Rápido de Aplicações</h3>
+                        <ul>
+                            <li>APLIC. DE CLOUD, IOT E INDÚSTRIA 4.0 EM PYTHON.</li>
+                            <li>COMPUTAÇÃO EM NUVEM.</li>
+                            <li>DESENVOLVIMENTO RÁPIDO DE APLICAÇÕES EM PYTHON.</li>
+                            <li>TÓPICOS DE BIG DATA EM PYTHON.</li>
+                        </ul>
+                    </div><!-- ESPECIALIDADES-BOX -->
                 </div><!--FLEX-->
             </div> <!--INTERFACE-->
         </section><!-- CERTIFICADOS -->
@@ -141,13 +156,16 @@
                 
                     <div class="txt-sobre">
                         <h2>OLÁ, SOU GUSTAVO LIMA MARTIN</h2>
-                        <p>Estou buscando me desenvolver na área como profissional. Tenho total interesse em aprender novas linguagens ou ferramentas, sou dedicado, esforçado e competente. No momento não possuo preferência de linguagens ou softwares mas pretendo me especializar como desenvolvedor Full Stack.</p>
+                        <p>um profissional apaixonado por tecnologia desde a infância. Sempre tive uma afinidade natural com dispositivos eletrônicos e uma curiosidade incessante sobre como as coisas funcionam. Essa paixão inicial guiou meu caminho profissional e me levou a uma carreira dinâmica e desafiadora no universo da tecnologia.</p>
+                        <p>Minha jornada profissional começou na área de manutenção de celulares, onde aprimorei minhas habilidades técnicas, resolvendo uma variedade de problemas em dispositivos móveis. Este período foi crucial para desenvolver uma mentalidade analítica e uma abordagem prática para solucionar desafios tecnológicos.</p>
+                        <p>No entanto, minha busca por conhecimento e a constante evolução do cenário tecnológico me motivaram a expandir meus horizontes. Assim, dei um salto significativo para o desenvolvimento de sistemas, sites e aplicativos. Ao adentrar esse campo, pude aplicar minha experiência técnica de maneira mais ampla, participando ativamente na criação de soluções digitais inovadoras.</p>
+                        <p>Estou animado para continuar minha jornada profissional, enfrentando novos desafios e contribuindo para inovações no campo da tecnologia. Estou aberto a oportunidades que me permitam expandir meu conjunto de habilidades, e continuar crescendo como profissional.</p>
                     </div> <!-- TXT-SOBRE -->
                     
                     <div class="txt-formacao">
                         <h2>Formação</h2>
                         <span>Estácio - Campus Gilberto Gil</span>
-                        <p>Análise e Desenvolvimento de Sistemas (5º semestre - noturno).</p>
+                        <p>Análise e Desenvolvimento de Sistemas.</p>
                     </div> <!-- TXT-FORMACAO -->
 
                     <div class="txt-idioma">
@@ -158,15 +176,11 @@
                     </div> <!-- TXT-IDIOMA -->
 
                     <div class="txt-tecnologias">
-                        <h2>Tecnologias</h2>
+                        <h2>Skilss</h2>
                         <ul>
-                            <li>HTML & CSS</li>
-                            <li>JavaScript</li>
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>MySQL</li>
-                            <li>C++</li>
-                            <li>React Native</li>
+                            <li>Desenvolvimento Web</li>
+                            <li>Desenvolvimento de Software</li>
+                            <li>Desenvolvimento Mobile</li>
                         </ul>
                     </div> <!-- TXT-TECNOLOGIAS -->
 
@@ -182,24 +196,35 @@
         </section><!-- SOBRE -->
 
         <section class="portfolio" id="portfolio">
-            <div class="interface">
-
+            <div class="interface text-center">
                 <h2 class="titulo">MEU PORTFÓLIO</h2>
 
                 <div class="flex">
-                    <a href="projetoPokedex.html">
-                        <div class="img-port" style="background-image: url(./src/img/portfolioPokedex.png);">
-                            <div class="overlay">Projeto Pokédex.</div>
+                    <a href="geradorQRcode.html">
+                        <div class="img-port" style="background-image: url(./src/img/geradorQRcode/geradorQRcode1.png);">
+                            <div class="overlay">Gerador de QRcode <br> 2024</div>
                         </div>
+                        <p>Gerador de QR code</p>
                     </a>
 
+                    <a href="pokedex.html">
+                        <div class="img-port" style="background-image: url(./src/img/pokedex/pokedex.png);">
+                            <div class="overlay">Pokédex <br> 2023</div>
+                        </div>
+                        <p>Pokédex</p>
+                    </a>
                 </div><!-- FLEX -->
+                
             </div><!-- INTERFACE -->
         </section><!-- PORTFOLIO -->
 
+        <div class="hr">
+            <hr>
+        </div>
+
         <section class="formulario" id="contato">
             <div class="inteface">
-                <h2 class="titulo">FALA COMIGO</h2>
+                <h2 class="titulo">FALE COMIGO</h2>
 
                 <form action="https://formsubmit.co/gustavolimamartin2002@gmail.com" method="POST" data-form target="_blank"> 
                     <input type="text" name="nome" id="nome" placeholder="Seu nome:" required>
@@ -207,7 +232,7 @@
                     <input type="text" inputmode="numeric" name="celular" id="celular" placeholder="Seu celular:">
                     <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem:" required></textarea>
                     <div class="btn-enviar">
-                        <button type="submit" data-button >Enviar</button>
+                        <button type="submit" data-button>Enviar</button>
                     </div>
                 </form>
             </div>
@@ -240,5 +265,8 @@
 
         </div><!-- INTERFACE -->
     </footer>
+<script src="./src/js/menu-mobile.js"></script>
+<script src="./src/js/nav.js"></script>
+<script src="./src/js/form.js"></script>
 </body>
 </html>
