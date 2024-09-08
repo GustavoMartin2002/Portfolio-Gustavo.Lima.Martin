@@ -371,6 +371,13 @@ section.sobre{
     text-align: justify;
 }
 
+.sobre .txt-experiencia{
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+   
+}
+
 .sobre .txt-formacao{
     color: white;
     margin-top: 20px;
@@ -387,7 +394,7 @@ section.sobre{
     list-style: none;
 }
 
-.sobre .txt-tecnologias{
+.sobre .txt-skills{
     color: white;
     margin-top: 20px;
     display: flex;
@@ -395,7 +402,7 @@ section.sobre{
     align-items: center;
 }
 
-.sobre .txt-tecnologias ul{
+.sobre .txt-skills ul{
     list-style: none;
     text-align: center;
 }
@@ -524,10 +531,9 @@ footer .line-footer p i{
 
 footer .line-footer p a{
     color: white;
-    
 }
 
-/* PROJETO POKEDEX */
+/* PROJETO */
 section .projeto{
     padding: 10px 4%;
 }
