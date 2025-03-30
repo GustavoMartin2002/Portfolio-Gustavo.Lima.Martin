@@ -247,6 +247,21 @@ section.portfolio .flex{
     margin-top: 30px;
 }
 
+.web-projects {
+    margin-top: 30px;
+}
+
+.software-projects {
+    margin-top: 90px;
+}
+
+.web-projects, .software-projects {
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-style: oblique;
+}
+
 .flex a{
     text-decoration: none;
 }
@@ -544,7 +559,6 @@ section .projeto{
 
 .projeto .img-projeto{
     text-align: center;
-  
 }
 
 .projeto .img-projeto a{
@@ -557,14 +571,16 @@ section .projeto{
     cursor: pointer;
     opacity: 80%;
     margin: 20px 0px;
+    transition: 1s;
 }
 
 .projeto .img-projeto a{
     background-size: hidden;
+    background-color: transparent;
 }
 
 .projeto img:hover{
-    transition: .8s;
+    transition: 1s;
     transform: scale(1.05);
     opacity: 100%;
 }
@@ -573,8 +589,6 @@ section .projeto{
     margin-top: 20px;
     color: white;
 }
-
-
 
 .projeto .detalhes p{
     text-align: justify;
